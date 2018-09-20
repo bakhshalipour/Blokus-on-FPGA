@@ -1,8 +1,8 @@
 # Blokus-on-FPGA
 
-This project provides implementation of [Blokus](https://en.wikipedia.org/wiki/Blokus) game in FPGA. The code is written in Verilog and deals with interfaces of [Altera DE2](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=183&No=30&PartNo=1) board. 
+This project provides an implementation of [Blokus](https://en.wikipedia.org/wiki/Blokus) game in FPGA. The code is written in Verilog and deals with interfaces of [Altera DE2](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=183&No=30&PartNo=1) board. 
 
-As Blokus is a complicated game, designing a sound AI algorithm for it is a challenging work. The algorithm should analysis *many* potential places for a specific shape, and put the shape in the best position. As a consequence, most of the algorithms exhibit an undesirable execution latency. Fortunately, such algorithms exhibit abundant parallelism which can be exploited by FPGA.
+As Blokus is a complicated game, designing a sound AI algorithm for it is challenging work. The algorithm should analysis *many* potential places for a specific shape, and put the shape in the best position. As a consequence, most of the algorithms exhibit an undesirable execution latency. Fortunately, such algorithms exhibit abundant parallelism which can be exploited by FPGA.
 
 This project implements an efficient AI algorithm for Blokus game on FPGA. The code uses *UART* for sending commands to and receiving states from Altera DE2 board. The maximum acceptable response time is 10 seconds, but the response usually is provided within 1 second.
 
