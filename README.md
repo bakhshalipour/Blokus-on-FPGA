@@ -8,5 +8,3 @@ This project implements an efficient AI algorithm for Blokus game on FPGA. The c
 
 The code was developed for the fourth [FPGA Challenge](http://fpga.sharif.edu/) of Sharif University of Technology and ranked 3rd among 30+ participants.
 
-## Acknowledgments
-This project is a joint work: **Mohammad Bakhshalipour**, Mostafa Karimi, and Hamed Sadat-Hosseini.
